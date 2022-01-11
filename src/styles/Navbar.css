@@ -1,0 +1,60 @@
+nav {
+   display: flex;
+   flex-direction: row;
+   height: 150px;
+   margin: 0 auto;
+   align-items: center;
+   font-size: 1.44rem;
+   color: var(--global-font-color);
+   width: 84%;
+   /* box-sizing: content-box; */
+}
+
+a {
+   display: inline;
+   color: inherit;
+}
+
+a:-webkit-any-link {
+   color: inherit;
+}
+
+ul {
+   padding: 0;
+}
+
+ul li {
+   display: inline;
+   padding-right: 1.8rem;
+}
+
+ul li a {
+   text-decoration: none;
+}
+
+ul li a:visited {
+   color: inherit;
+}
+
+.on-site {
+   flex: 1;
+}
+
+.off-site {
+   flex: 1;
+   text-align: end;
+}
+
+.off-site li:last-child {
+   padding-right: 0;
+}
+
+.logo-wrapper {
+   flex: 1;
+   text-align: center;
+}
+
+.logo {
+   margin-top: 48px;
+   height: 78px;
+}
