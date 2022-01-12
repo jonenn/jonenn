@@ -1,0 +1,34 @@
+.hero {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   height: 78vh;
+   width: 84%;
+   box-sizing: border-box;
+}
+
+.hero__image {
+   max-height: 33vw;
+}
+
+.hero__content {
+   font-weight: 400;
+   margin-left: 12.6vh;
+   color: #324f61;
+}
+
+.hero__title {
+   font-size: 7.2rem;
+   margin: 0 0 auto 0;
+}
+
+.hero__subtitle {
+   font-size: 3.6rem;
+   margin: 0;
+}
+
+.hero__paragraph {
+   font-size: 1.2rem;
+}
