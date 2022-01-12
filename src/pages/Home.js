@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 
 const Home = () => {
    return (
@@ -10,6 +11,7 @@ const Home = () => {
             hsubtitle="I'm Juan J. Malaver"
             hparagraph="Web developer with a passion for art, design and photography."
          />
+         <Footer />
       </div>
    );
 };
