@@ -3,14 +3,14 @@
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   margin: 0 auto;
+   margin: -1.5rem auto;
    height: 78vh;
    width: 84%;
    box-sizing: border-box;
 }
 
 .hero__image {
-   max-height: 33vw;
+   max-height: 36vw;
 }
 
 .hero__content {

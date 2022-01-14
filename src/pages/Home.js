@@ -1,10 +1,11 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Footer from "../components/Footer";
+import { Navbar } from "../components/Navbar";
+import { Hero } from "../components/Hero";
+import { Footer } from "../components/Footer";
+import React from "react";
 
 const Home = () => {
    return (
-      <div>
+      <React.Fragment>
          <Navbar />
          <Hero
             htitle="Hello!"
@@ -12,7 +13,7 @@ const Home = () => {
             hparagraph="Web developer with a passion for art, design and photography."
          />
          <Footer />
-      </div>
+      </React.Fragment>
    );
 };
 
