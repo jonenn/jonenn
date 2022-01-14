@@ -27,12 +27,12 @@ const Navbar = () => {
             <ul className="off-site">
                <li>
                   <a href="https://www.linkedin.com/in/juan-j-malaver-04013119b">
-                     <img src={linkedin} width="27"></img>
+                     <img src={linkedin} width="33"></img>
                   </a>
                </li>
                <li>
                   <a href="https://github.com/jonenn">
-                     <img src={github} width="27"></img>
+                     <img src={github} width="33"></img>
                   </a>
                </li>
             </ul>

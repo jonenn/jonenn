@@ -1,8 +1,8 @@
 import "./global.css";
-import Home from "./pages/Home";
+import { Layout } from "./components/Layout";
 
 const App = () => {
-   return <Home />;
+   return <Layout />;
 };
 
-export default App;
+export { App };
