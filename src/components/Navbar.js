@@ -1,6 +1,7 @@
 import jonennLogo from "../images/logo.png";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -9,20 +10,27 @@ const Navbar = () => {
          <nav>
             <ul className="on-site">
                <li>
-                  <a href="#">Home</a>
+                  <Link to={"/"}>Home</Link>
                </li>
                <li>
-                  <a href="#">Portfolio</a>
+                  <Link to={"/Portfolio"}>Portfolio</Link>
                </li>
                <li>
-                  <a href="#">About</a>
+                  <Link to="#">About</Link>
                </li>
                <li>
-                  <a href="#">Contact</a>
+                  <Link to="#">Contact</Link>
                </li>
             </ul>
             <a href="#">
-               <img className="logo" src={jonennLogo} height="78"></img>
+               <img
+                  className="logo"
+                  src={jonennLogo}
+                  height="78"
+                  onClick={function () {
+                     console.log("Yass!");
+                  }}
+               ></img>
             </a>
             <ul className="off-site">
                <li>

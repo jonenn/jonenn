@@ -10,7 +10,7 @@ body {
    background: radial-gradient(
       ellipse 84% 111% at 69% 54%,
       rgba(177, 179, 190, 60%) 0%,
-      rgba(235, 237, 255, 15%) 100%
+      rgba(255, 255, 255, 0.15) 100%
    );
    min-height: 100vh;
    font-family: "Lato", sans-serif;

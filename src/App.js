@@ -1,8 +1,22 @@
 import "./global.css";
-import { Layout } from "./components/Layout";
+import { Portfolio } from "./pages/Portfolio";
+import { Hero } from "./components/Hero";
+import { Home } from "./pages/Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const App = () => {
-   return <Layout />;
+   return (
+      <Router>
+         <Switch>
+            <Route path="/Portfolio">
+               <Portfolio />
+            </Route>
+            <Route path="/">
+               <Home />
+            </Route>
+         </Switch>
+      </Router>
+   );
 };
 
 export { App };
