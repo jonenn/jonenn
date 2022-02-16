@@ -1,0 +1,20 @@
+.portfolio {
+   margin: 0 auto;
+   width: 75%;
+}
+
+.portfolio__title {
+   margin: 1.2rem 1.5rem;
+   text-align: center;
+}
+
+.portfolio__wrapper {
+   display: flex;
+   margin: 0 auto;
+   padding-bottom: 6rem;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 84%;
+   box-sizing: border-box;
+}

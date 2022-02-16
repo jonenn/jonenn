@@ -1,0 +1,60 @@
+.window {
+   margin-top: 3rem;
+   border-radius: 0.42rem;
+   width: 36%;
+   overflow: hidden;
+   box-shadow: 0 22px 30px 4px rgba(0, 0, 0, 0.15);
+   background-color: rgba(0, 0, 0, 0.15);
+}
+
+.window__title {
+   position: relative;
+   display: flex;
+   height: 1rem;
+   background-color: #ede7e7;
+   padding: 0.21rem 0 0.12rem 0.21rem;
+}
+
+.window__control {
+   position: absolute;
+   display: inline-block;
+   margin: 0.21rem;
+   margin-bottom: 0.9rem;
+   height: 0.54rem;
+   width: 0.54rem;
+   border-radius: 50%;
+   box-sizing: border-box;
+}
+
+.close {
+   background-color: #ff605c;
+   cursor: pointer;
+}
+
+.minimize {
+   left: calc((0.21rem * 2) + 0.54rem);
+   background-color: #ffbd44;
+   cursor: pointer;
+}
+
+.maximize {
+   left: calc((0.21rem * 3) + (0.54rem * 2));
+   background-color: #00ca4e;
+   cursor: pointer;
+}
+
+.window__title--project {
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   cursor: default;
+}
+
+.window__image {
+   object-fit: cover;
+   border-bottom-left-radius: 0.42rem;
+   border-bottom-right-radius: 0.42rem;
+   width: 100%;
+   cursor: pointer;
+}
