@@ -1,0 +1,41 @@
+.box {
+   margin: 12vh auto;
+   display: flex;
+   width: 72%;
+   height: 48vh;
+   box-sizing: border-box;
+   border-radius: 0.42rem;
+   box-shadow: 0 22px 30px 4px rgba(0, 0, 0, 0.12);
+   overflow: hidden;
+   background-color: rgba(216, 216, 216, 0.015);
+}
+
+.box__container {
+   padding: 4.2rem 4.2rem 3rem;
+   width: 64%;
+   white-space: pre-wrap;
+   box-sizing: border-box;
+}
+
+.box__list {
+   display: flex;
+   flex-direction: row;
+}
+
+.box__list--items {
+   display: flex;
+   flex-direction: column;
+}
+
+.image__container {
+   object-position: center;
+   width: 36%;
+   height: 100%;
+}
+
+.box__image {
+   float: left;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}

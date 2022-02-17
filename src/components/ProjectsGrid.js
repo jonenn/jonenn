@@ -10,11 +10,27 @@ const ProjectsGrid = () => {
       <div className="portfolio">
          <h1 className="portfolio__title">My Portfolio</h1>
          <section className="portfolio__wrapper">
-            <Project title="musique - The web's music player" image={musique} />
-            <Project title="Simon Game" image={simon} />
+            <Project
+               title="musique - The web's music player"
+               image={musique}
+               goto="https://jonenn.github.io/musique/"
+            />
+            <Project
+               title="Simon Game"
+               image={simon}
+               goto="https://jonenn.github.io/SimonGame/"
+            />
             {/* <Project title="Converter" image={converter} /> */}
-            <Project title="Renoir's Gallery" image={renoir} />
-            <Project title="Claude Monet" image={monet} />
+            <Project
+               title="Renoir's Gallery"
+               image={renoir}
+               goto="https://jonenn.github.io/Renoir/"
+            />
+            <Project
+               title="Claude Monet"
+               image={monet}
+               goto="https://jonenn.github.io/Monet/"
+            />
          </section>
       </div>
    );

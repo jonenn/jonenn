@@ -13,25 +13,15 @@ const Navbar = () => {
                   <Link to={"/"}>Home</Link>
                </li>
                <li>
-                  <Link to={"/Portfolio"}>Portfolio</Link>
+                  <Link to={"/portfolio"}>Portfolio</Link>
                </li>
                <li>
-                  <Link to="#">About</Link>
+                  <Link to="/about">About</Link>
                </li>
                <li>
                   <Link to="#">Contact</Link>
                </li>
             </ul>
-            <a href="#">
-               <img
-                  className="logo"
-                  src={jonennLogo}
-                  height="78"
-                  onClick={function () {
-                     console.log("Yass!");
-                  }}
-               ></img>
-            </a>
             <ul className="off-site">
                <li>
                   <a href="https://www.linkedin.com/in/juan-j-malaver-04013119b">
@@ -44,6 +34,9 @@ const Navbar = () => {
                   </a>
                </li>
             </ul>
+            <Link className="logo--link" to="/">
+               <img className="logo--image" src={jonennLogo} height="78"></img>
+            </Link>
          </nav>
       </header>
    );

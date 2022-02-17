@@ -1,7 +1,7 @@
 import "../styles/Footer.css";
+import { date } from "../App";
 
 const Footer = () => {
-   let date = new Date();
    return (
       <footer>
          <section className="footer__wrapper">
