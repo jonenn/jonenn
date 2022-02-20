@@ -18,3 +18,14 @@
    width: 84%;
    box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+   .portfolio {
+      transition-duration: 0.3s;
+      transition-timing-function: linear;
+   }
+
+   .portfolio.active {
+      margin-top: 180px;
+   }
+}

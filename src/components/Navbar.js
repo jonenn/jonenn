@@ -1,27 +1,19 @@
 import jonennLogo from "../images/logo.png";
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
+import { BurgerMenu } from "./BurgerMenu";
+import { OnSiteNav } from "./OnSiteNav";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
+import { useState } from "react";
 
 const Navbar = () => {
+   const [showMenu, setShowMenu] = useState(false);
    return (
       <header>
          <nav>
-            <ul className="on-site">
-               <li>
-                  <Link to={"/"}>Home</Link>
-               </li>
-               <li>
-                  <Link to={"/portfolio"}>Portfolio</Link>
-               </li>
-               <li>
-                  <Link to="/about">About</Link>
-               </li>
-               <li>
-                  <Link to="#">Contact</Link>
-               </li>
-            </ul>
+            <BurgerMenu currentState={showMenu} setShowMenu={setShowMenu} />
+            <OnSiteNav currentState={showMenu} />
             <ul className="off-site">
                <li>
                   <a href="https://www.linkedin.com/in/juan-j-malaver-04013119b">

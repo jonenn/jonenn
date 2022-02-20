@@ -5,7 +5,7 @@ import "../styles/About.css";
 
 const About = () => {
    return (
-      <Layout>
+      <Layout className="layout">
          <div className="box">
             <div className="image__container">
                <img className="box__image" src={profile}></img>

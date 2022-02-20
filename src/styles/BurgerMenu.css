@@ -1,0 +1,22 @@
+.menu-mobile {
+   display: none;
+}
+
+@media screen and (max-width: 768px) {
+   .menu-mobile {
+      display: block;
+      top: 8px;
+   }
+
+   .menu-mobile:active {
+      filter: brightness(60%);
+   }
+
+   .burger-b {
+      width: 33px;
+      height: 4.33px;
+      background-color: var(--global-font-color);
+      margin: 5px 0;
+      border-radius: 100px;
+   }
+}

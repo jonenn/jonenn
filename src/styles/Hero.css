@@ -31,3 +31,39 @@
 .hero__paragraph {
    font-size: 1.2rem;
 }
+
+@media screen and (max-width: 768px) {
+   .hero {
+      flex-direction: column;
+      height: auto;
+      transition-duration: 0.3s;
+      transition-timing-function: linear;
+   }
+
+   .hero.active {
+      margin-top: 180px;
+   }
+
+   .hero__image {
+      max-height: none;
+      height: auto;
+      width: 66%;
+   }
+
+   .hero__content {
+      text-align: center;
+      margin: 3rem auto;
+   }
+
+   .hero__title {
+      font-size: 4.2rem;
+   }
+
+   .hero__subtitle {
+      font-size: 2.4rem;
+   }
+
+   .hero__paragraph {
+      margin-bottom: 3rem;
+   }
+}

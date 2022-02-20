@@ -1,0 +1,33 @@
+.on-site {
+   display: flex;
+   flex: 1;
+   align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+   .on-site {
+      position: absolute;
+      margin-top: calc(0.9rem + var(--logo-height));
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+      flex-direction: column;
+      max-height: 0;
+      top: 0;
+      overflow: hidden;
+      transition-property: max-height;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+   }
+
+   .on-site.active {
+      max-height: 400px;
+   }
+
+   .on-site li {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      padding: 0;
+   }
+}

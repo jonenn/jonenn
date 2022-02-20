@@ -37,10 +37,6 @@ ul li a:visited {
    color: inherit;
 }
 
-.on-site {
-   flex: 1;
-}
-
 .off-site {
    flex: 1;
    text-align: end;
@@ -65,4 +61,20 @@ ul li a:visited {
 .logo--image {
    height: 78px;
    transform: translate(-50%);
+}
+
+@media screen and (max-width: 768px) {
+   nav {
+      --logo-height: 87px;
+      position: relative;
+      margin-top: 0.9rem;
+   }
+
+   .logo--link {
+      top: 27px;
+   }
+
+   .logo--image {
+      height: var(--logo-height);
+   }
 }
