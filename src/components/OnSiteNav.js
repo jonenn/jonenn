@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 
 const OnSiteNav = ({ currentState }) => {
    const mobileMenu = document.querySelector(".on-site");
+   let onSiteClass = "on-site";
    if (currentState) {
-      mobileMenu.classList.add("active");
+      onSiteClass += " active";
    } else {
-      mobileMenu.classList.remove("active");
+      onSiteClass = "on-site";
    }
    return (
-      <ul className="on-site">
+      <ul className={onSiteClass}>
          <li>
             <Link to={"/"}>Home</Link>
          </li>
