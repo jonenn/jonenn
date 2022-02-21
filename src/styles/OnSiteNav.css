@@ -7,7 +7,7 @@
 @media screen and (max-width: 1024px) {
    .on-site {
       position: absolute;
-      margin-top: calc(0.9rem + var(--logo-height));
+      margin-top: calc(var(--logo-height));
       left: 50%;
       transform: translate(-50%);
       display: flex;
@@ -30,5 +30,11 @@
       margin: 0 auto;
       margin-top: 1rem;
       padding: 0;
+   }
+}
+
+@media screen and (max-width: 425px) {
+   .on-site {
+      margin-top: 90px;
    }
 }

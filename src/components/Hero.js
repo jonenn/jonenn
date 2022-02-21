@@ -3,11 +3,7 @@ import "../styles/Hero.css";
 
 const Hero = ({ currentState, htitle, hsubtitle, hparagraph }) => {
    let heroClass = "hero";
-   if (currentState) {
-      heroClass += " active";
-   } else {
-      heroClass = "hero";
-   }
+   currentState ? (heroClass += " active") : (heroClass = "hero");
    return (
       <main className={heroClass}>
          <img className="hero__image" src={jonennHero}></img>

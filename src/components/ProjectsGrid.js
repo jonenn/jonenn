@@ -7,11 +7,9 @@ import simon from "../images/simon.png";
 
 const ProjectsGrid = ({ currentState }) => {
    let portfolioClass = "portfolio";
-   if (currentState) {
-      portfolioClass += " active";
-   } else {
-      portfolioClass = "portfolio";
-   }
+   currentState
+      ? (portfolioClass += " active")
+      : (portfolioClass = "portfolio");
    return (
       <div className={portfolioClass}>
          <h1 className="portfolio__title">My Portfolio</h1>

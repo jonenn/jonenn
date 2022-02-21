@@ -78,3 +78,22 @@ ul li a:visited {
       height: var(--logo-height);
    }
 }
+
+@media screen and (max-width: 425px) {
+   nav {
+      margin-top: 0;
+      height: 120px;
+   }
+
+   ul li a img {
+      display: none;
+   }
+
+   .logo--link {
+      top: 18px;
+   }
+
+   .logo--image {
+      height: 81px;
+   }
+}

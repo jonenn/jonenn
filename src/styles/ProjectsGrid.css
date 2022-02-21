@@ -26,10 +26,20 @@
    }
 
    .portfolio.active {
-      margin-top: 180px;
+      margin-top: 135px;
    }
 
    .portfolio__wrapper {
       flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 425px) {
+   .portfolio.active {
+      margin-top: 165px;
+   }
+
+   .portfolio__wrapper {
+      padding-bottom: 1.5rem;
    }
 }

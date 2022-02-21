@@ -10,7 +10,7 @@ const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
       <div className={cardWrapperClass}>
          <div className="card">
             <img className="card__image" src={profile}></img>
-            <div className="card__container">
+            <div className="card__subcontainer">
                <h1 className="card__title">{ctitle}</h1>
                <p className="card__paragraph">{cparagraph}</p>
                <h2 className="card__subtitle">{csubtitle}</h2>
