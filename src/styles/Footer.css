@@ -1,8 +1,8 @@
 .footer__wrapper {
    position: absolute;
    bottom: 0;
-   left: 0;
-   right: 0;
+   width: 100%;
+   height: 81px;
    text-align: center;
    padding-top: 0.6rem;
    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -14,4 +14,10 @@
    font-size: 0.84rem;
    padding: 1.5rem;
    color: var(--global-color);
+}
+
+@media screen and (max-width: 425px) {
+   .footer__wrapper {
+      position: relative;
+   }
 }

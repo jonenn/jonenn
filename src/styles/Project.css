@@ -58,3 +58,10 @@
    width: 100%;
    cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+   .window {
+      margin: 2.4rem auto;
+      width: 100%;
+   }
+} ;

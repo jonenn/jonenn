@@ -22,7 +22,6 @@ const App = () => {
    );
 };
 
-const date = new Date();
-export { date };
+export const date = new Date();
 
 export { App };

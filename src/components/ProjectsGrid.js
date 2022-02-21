@@ -5,9 +5,15 @@ import musique from "../images/musique.png";
 import renoir from "../images/renoir.png";
 import simon from "../images/simon.png";
 
-const ProjectsGrid = () => {
+const ProjectsGrid = ({ currentState }) => {
+   let portfolioClass = "portfolio";
+   if (currentState) {
+      portfolioClass += " active";
+   } else {
+      portfolioClass = "portfolio";
+   }
    return (
-      <div className="portfolio">
+      <div className={portfolioClass}>
          <h1 className="portfolio__title">My Portfolio</h1>
          <section className="portfolio__wrapper">
             <Project

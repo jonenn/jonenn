@@ -19,13 +19,17 @@
    box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
    .portfolio {
-      transition-duration: 0.3s;
+      transition-duration: 0.4s;
       transition-timing-function: linear;
    }
 
    .portfolio.active {
       margin-top: 180px;
+   }
+
+   .portfolio__wrapper {
+      flex-direction: column;
    }
 }

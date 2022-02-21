@@ -5,10 +5,11 @@ import { BurgerMenu } from "./BurgerMenu";
 import { OnSiteNav } from "./OnSiteNav";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-import { useState } from "react";
+import { useContext } from "react";
+import { DataContext } from "../context/DataContext";
 
 const Navbar = () => {
-   const [showMenu, setShowMenu] = useState(false);
+   const { showMenu, setShowMenu } = useContext(DataContext);
    return (
       <header>
          <nav>

@@ -4,7 +4,7 @@
    align-items: flex-start;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
    .on-site {
       position: absolute;
       margin-top: calc(0.9rem + var(--logo-height));
@@ -15,13 +15,14 @@
       max-height: 0;
       top: 0;
       overflow: hidden;
-      transition-property: max-height;
-      transition-duration: 0.2s;
+      transition-duration: 0.3s;
       transition-timing-function: linear;
    }
 
    .on-site.active {
       max-height: 400px;
+      transition-duration: 0.3s;
+      transition-timing-function: linear;
    }
 
    .on-site li {

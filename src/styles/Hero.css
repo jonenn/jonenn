@@ -32,22 +32,24 @@
    font-size: 1.2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
    .hero {
       flex-direction: column;
       height: auto;
-      transition-duration: 0.3s;
+      transition-property: margin-top;
+      transition-duration: 0.4s;
       transition-timing-function: linear;
    }
 
    .hero.active {
-      margin-top: 180px;
+      margin-top: 150px;
    }
 
    .hero__image {
       max-height: none;
       height: auto;
       width: 66%;
+      padding-top: 2.4rem;
    }
 
    .hero__content {
@@ -64,6 +66,6 @@
    }
 
    .hero__paragraph {
-      margin-bottom: 3rem;
+      padding-bottom: 4.2rem;
    }
 }

@@ -63,15 +63,15 @@ ul li a:visited {
    transform: translate(-50%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
    nav {
-      --logo-height: 87px;
+      --logo-height: 102px;
       position: relative;
       margin-top: 0.9rem;
    }
 
    .logo--link {
-      top: 27px;
+      top: 18px;
    }
 
    .logo--image {
