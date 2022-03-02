@@ -1,5 +1,7 @@
 import profile from "../images/me.jpeg";
 import "../styles/IntroCard.css";
+import linkedin from "../images/linkedin.png";
+import github from "../images/github.png";
 
 const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
    let cardWrapperClass = "card__wrapper";
@@ -32,6 +34,15 @@ const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
                   </ul>
                </section>
             </div>
+            <section className="contact">
+               <p>Contact me:</p>
+               <a href="https://www.linkedin.com/in/juan-j-malaver-04013119b">
+                  <img src={linkedin} width="33"></img>
+               </a>
+               <a href="https://github.com/jonenn">
+                  <img src={github} width="33"></img>
+               </a>
+            </section>
          </div>
       </div>
    );

@@ -1,7 +1,7 @@
 .card {
    display: flex;
    width: 72%;
-   height: 48vh;
+   height: 600px;
    box-sizing: border-box;
    border-radius: 0.42rem;
    margin: 6.9rem auto 0;
@@ -32,6 +32,24 @@
    height: 100%;
    float: left;
    object-fit: cover;
+}
+
+.contact {
+   display: none;
+}
+
+@media screen and (max-width: 1538px) {
+   .card {
+      height: auto;
+   }
+
+   .card__image {
+      height: initial;
+   }
+
+   .card__list {
+      padding-bottom: 3rem;
+   }
 }
 
 @media screen and (max-width: 1024px) {
@@ -107,5 +125,10 @@
 
    .card__list ul {
       width: 50%;
+   }
+
+   .contact {
+      text-align: center;
+      display: block;
    }
 }

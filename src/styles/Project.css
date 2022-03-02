@@ -64,4 +64,19 @@
       margin: 2.4rem auto;
       width: 100%;
    }
-} ;
+}
+
+@media screen and (max-width: 425px) {
+   .window__control {
+      height: 0.45rem;
+      width: 0.45rem;
+   }
+
+   .minimize {
+      left: calc((0.21rem * 2) + 0.42rem);
+   }
+
+   .maximize {
+      left: calc((0.21rem * 3) + (0.42rem * 2));
+   }
+}
