@@ -1,3 +1,7 @@
+.card__wrapper {
+   padding-bottom: 9vw;
+}
+
 .card {
    display: flex;
    width: 72%;

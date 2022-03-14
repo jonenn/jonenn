@@ -11,7 +11,7 @@
 .portfolio__wrapper {
    display: flex;
    margin: 0 auto;
-   padding-bottom: 6rem;
+   padding-bottom: 9vw;
    flex-direction: row;
    justify-content: space-between;
    flex-wrap: wrap;

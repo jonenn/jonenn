@@ -11,7 +11,9 @@ const About = () => {
          <IntroCard
             currentState={showMenu}
             ctitle="About me"
-            cparagraph={`I am Juan J. Malaver, a ${date.getFullYear() - 1999}
+            cparagraph={`I am Juan J. Malaver, a ${parseInt(
+               date.getFullYear() - 1999.4
+            )}
                year old front-end developer that loves learning new things every day. I
                have always been passionate about art, literature, photography,
                cinematography, design and technology as much as solving

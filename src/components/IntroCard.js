@@ -21,13 +21,11 @@ const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
                      <li>HTML5</li>
                      <li>CSS3</li>
                      <li>JavaScript</li>
-                  </ul>
-                  <ul className="card__list--items">
                      <li>JSON</li>
                      <li>Bootstrap</li>
-                     <li>Git/GitHub</li>
                   </ul>
                   <ul className="card__list--items">
+                     <li>Git/GitHub</li>
                      <li>React</li>
                      <li>Photoshop</li>
                      <li>Illustrator</li>

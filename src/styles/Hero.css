@@ -1,9 +1,13 @@
+main {
+   padding-bottom: 9vw;
+}
+
 .hero {
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   margin: -1.5rem auto;
+   margin: auto;
    height: 78vh;
    width: 84%;
    box-sizing: border-box;
@@ -30,6 +34,21 @@
 
 .hero__paragraph {
    font-size: 1.2rem;
+}
+
+.hero__button {
+   margin-top: 1.2rem;
+   padding: 0.9rem 1.2rem;
+   border: 1px solid;
+   border-radius: 2rem;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+@media screen and (min-height: 1000px) {
+   main {
+      padding-bottom: initial;
+   }
 }
 
 @media screen and (max-width: 1024px) {

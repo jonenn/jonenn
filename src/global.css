@@ -13,6 +13,7 @@ body {
    position: relative;
    margin: 0;
    min-height: 100vh;
+   height: max-content;
    font-family: "Lato", sans-serif;
    color: var(--global-font-color);
    -webkit-font-smoothing: antialiased;
