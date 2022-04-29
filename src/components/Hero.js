@@ -1,5 +1,6 @@
 import jonennHero from "../images/hero.png";
 import "../styles/Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = ({ currentState, htitle, hsubtitle, hparagraph }) => {
    let heroClass = "hero";
@@ -12,12 +13,13 @@ const Hero = ({ currentState, htitle, hsubtitle, hparagraph }) => {
                <h1 className="hero__title">{htitle}</h1>
                <h2 className="hero__subtitle">{hsubtitle}</h2>
                <p className="hero__paragraph">{hparagraph}</p>
-               <button
+               <Link
                   className="hero__button"
-                  onClick={() => (window.location.href = "/portfolio")}
+                  to={"/about"}
+                  style={{ textDecoration: "none" }}
                >
                   Show more
-               </button>
+               </Link>
             </section>
          </div>
       </main>

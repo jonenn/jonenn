@@ -20,9 +20,6 @@ const OnSiteNav = ({ currentState }) => {
          <li>
             <Link to="/about">About</Link>
          </li>
-         {/* <li>
-                  <Link to="#">Gallery</Link>
-               </li> */}
       </ul>
    );
 };
