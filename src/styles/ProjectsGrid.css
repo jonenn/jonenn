@@ -3,8 +3,19 @@
    width: 75%;
 }
 
+.title-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.title-container img {
+   height: 3.3rem;
+   opacity: 0.84;
+}
+
 .portfolio__title {
-   margin: 1.2rem 1.5rem;
+   margin: 1.2rem 1.5rem 1.2rem 0.9rem;
    text-align: center;
 }
 

@@ -1,12 +1,12 @@
-import jonennLogo from "../images/logo.png";
-import linkedin from "../images/linkedin.png";
-import github from "../images/github.png";
-import { BurgerMenu } from "./BurgerMenu";
-import { OnSiteNav } from "./OnSiteNav";
-import { Link } from "react-router-dom";
-import "../styles/Navbar.css";
-import { useContext } from "react";
-import { DataContext } from "../context/DataContext";
+import jonennLogo from '../images/logo.png';
+import linkedin from '../images/linkedin.png';
+import github from '../images/github.png';
+import { BurgerMenu } from './BurgerMenu';
+import { OnSiteNav } from './OnSiteNav';
+import { Link } from 'react-router-dom';
+import '../styles/Navbar.css';
+import { useContext } from 'react';
+import { DataContext } from '../context/DataContext';
 
 const Navbar = () => {
    const { showMenu, setShowMenu } = useContext(DataContext);

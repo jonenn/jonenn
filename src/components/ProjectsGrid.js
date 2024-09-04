@@ -1,18 +1,25 @@
-import { Project } from "./Project";
-import "../styles/ProjectsGrid.css";
-import monet from "../images/monet.png";
-import musique from "../images/musique.png";
-import renoir from "../images/renoir.png";
-import simon from "../images/simon.png";
+import { Project } from './Project';
+import '../styles/ProjectsGrid.css';
+import monet from '../images/monet.png';
+import musique from '../images/musique.png';
+import renoir from '../images/renoir.png';
+import simon from '../images/simon.png';
 
 const ProjectsGrid = ({ currentState }) => {
-   let portfolioClass = "portfolio";
+   let portfolioClass = 'portfolio';
    currentState
-      ? (portfolioClass += " active")
-      : (portfolioClass = "portfolio");
+      ? (portfolioClass += ' active')
+      : (portfolioClass = 'portfolio');
    return (
       <div className={portfolioClass}>
-         <h1 className="portfolio__title">My Portfolio</h1>
+         <div class="title-container">
+            <img
+               src="https://jonenn.github.io/musique/images/Jonenn.gif"
+               alt=""
+               className="logo--gif"
+            />
+            <h1 className="portfolio__title">My Portfolio</h1>
+         </div>
          <section className="portfolio__wrapper">
             <Project
                title="musique - The web's music player"

@@ -1,8 +1,8 @@
-import "./global.css";
-import { About } from "./pages/About";
-import { Portfolio } from "./pages/Portfolio";
-import { Home } from "./pages/Home";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './global.css';
+import { About } from './pages/About';
+import { Portfolio } from './pages/Portfolio';
+import { Home } from './pages/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
    return (

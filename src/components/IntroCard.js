@@ -1,13 +1,13 @@
-import profile from "../images/me.jpeg";
-import "../styles/IntroCard.css";
-import linkedin from "../images/linkedin.png";
-import github from "../images/github.png";
+import profile from '../images/me.jpeg';
+import '../styles/IntroCard.css';
+import linkedin from '../images/linkedin.png';
+import github from '../images/github.png';
 
 const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
-   let cardWrapperClass = "card__wrapper";
+   let cardWrapperClass = 'card__wrapper';
    currentState
-      ? (cardWrapperClass += " active")
-      : (cardWrapperClass = "card__wrapper");
+      ? (cardWrapperClass += ' active')
+      : (cardWrapperClass = 'card__wrapper');
    return (
       <div className={cardWrapperClass}>
          <div className="card">
@@ -22,13 +22,27 @@ const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
                      <li>CSS3</li>
                      <li>JavaScript</li>
                      <li>JSON</li>
-                     <li>Bootstrap</li>
+                     <li>Bash</li>
+                     <li>CSS Flex</li>
+                     <li>Grid Layout</li>
                   </ul>
                   <ul className="card__list--items">
+                     <li>Responsiveness</li>
                      <li>Git/GitHub</li>
+                     <li>Vite</li>
                      <li>React</li>
+                     <li>React Router</li>
+                     <li>React Context</li>
+                     <li>Redux</li>
+                  </ul>
+                  <ul className="card__list--items">
+                     <li>NPM</li>
+                     <li>Axios</li>
+                     <li>Bootstrap</li>
                      <li>Photoshop</li>
                      <li>Illustrator</li>
+                     <li>Figma</li>
+                     <li>Agile/SCRUM</li>
                   </ul>
                </section>
             </div>

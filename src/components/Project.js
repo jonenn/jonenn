@@ -1,4 +1,4 @@
-import "../styles/Project.css";
+import '../styles/Project.css';
 
 const Project = (props) => {
    return (
@@ -9,7 +9,7 @@ const Project = (props) => {
             <div className="window__control maximize"></div>
             <h6 className="window__title--project">{props.title}</h6>
          </section>
-         <a href={props.goto} target="_blank">
+         <a href={props.goto} target="_blank" rel="noreferrer">
             <img className="window__image" src={props.image}></img>
          </a>
       </section>
