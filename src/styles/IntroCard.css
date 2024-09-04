@@ -27,6 +27,10 @@
    flex-direction: row;
 }
 
+.card__list--grouped {
+   display: flex;
+}
+
 .card__list--items {
    display: flex;
    flex-direction: column;
@@ -55,6 +59,15 @@
 
    .card__list {
       padding-bottom: 3rem;
+   }
+
+   .card__list--grouped {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .card__list--items {
+      margin: 0.6rem 0;
    }
 }
 
@@ -110,6 +123,7 @@
    .card {
       padding: 0.9rem;
       width: 81%;
+      text-align: center;
    }
 
    .card__wrapper {
@@ -123,18 +137,30 @@
    }
 
    .card__list {
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       box-sizing: border-box;
    }
 
-   .card__list ul {
-      width: 50%;
+   .card__list--grouped ul li {
+      padding: 0;
+   }
+
+   .card__list--grouped {
+      width: 100%;
    }
 
    .contact {
       text-align: center;
       display: block;
+   }
+
+   .contact__wrapper {
+      display: flex;
+      gap: 0.9rem;
+      justify-content: center;
+      margin-bottom: 3rem;
    }
 }

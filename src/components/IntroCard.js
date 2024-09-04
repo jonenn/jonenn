@@ -17,46 +17,57 @@ const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
                <p className="card__paragraph">{cparagraph}</p>
                <h2 className="card__subtitle">{csubtitle}</h2>
                <section className="card__list">
-                  <ul className="card__list--items">
-                     <li>HTML5</li>
-                     <li>CSS3</li>
-                     <li>CSS Flex</li>
-                     <li>Grid Layout</li>
-                     <li>JavaScript</li>
-                     <li>JSON</li>
-                  </ul>
-                  <ul className="card__list--items">
-                     <li>Bash</li>
-                     <li>Git/GitHub</li>
-                     <li>NPM</li>
-                     <li>Vite</li>
-                     <li>Agile/SCRUM</li>
-                  </ul>
-                  <ul className="card__list--items">
-                     <li>React</li>
-                     <li>React-Router</li>
-                     <li>React-Context</li>
-                     <li>Redux</li>
-                     <li>Axios</li>
-                  </ul>
-                  <ul className="card__list--items"></ul>
-                  <ul className="card__list--items">
-                     <li>Responsiveness</li>
-                     <li>Bootstrap</li>
-                     <li>Figma</li>
-                     <li>Illustrator</li>
-                     <li>Photoshop</li>
-                  </ul>
+                  <div class="card__list--grouped">
+                     <ul className="card__list--items">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>CSS Flex</li>
+                        <li>Grid Layout</li>
+                        <li>JavaScript</li>
+                        <li>JSON</li>
+                     </ul>
+                     <ul className="card__list--items">
+                        <li>Bash</li>
+                        <li>Git/GitHub</li>
+                        <li>NPM</li>
+                        <li>Vite</li>
+                        <li>Agile/SCRUM</li>
+                     </ul>
+                  </div>
+
+                  <div class="card__list--grouped">
+                     <ul className="card__list--items">
+                        <li>Responsiveness</li>
+                        <li>Bootstrap</li>
+                        <li>Figma</li>
+                        <li>Illustrator</li>
+                        <li>Photoshop</li>
+                     </ul>
+                     <ul className="card__list--items">
+                        <li>React</li>
+                        <li>React-Router</li>
+                        <li>React-Context</li>
+                        <li>Redux</li>
+                        <li>Axios</li>
+                     </ul>
+                     <ul className="card__list--items"></ul>
+                  </div>
                </section>
             </div>
             <section className="contact">
                <p>Contact me:</p>
-               <a href="https://www.linkedin.com/in/juan-j-malaver-04013119b">
-                  <img src={linkedin} width="33" alt="Linkedin Profile"></img>
-               </a>
-               <a href="https://github.com/jonenn">
-                  <img src={github} width="33" alt="Github Profile"></img>
-               </a>
+               <div class="contact__wrapper">
+                  <a href="https://www.linkedin.com/in/juan-j-malaver-04013119b">
+                     <img
+                        src={linkedin}
+                        width="33"
+                        alt="Linkedin Profile"
+                     ></img>
+                  </a>
+                  <a href="https://github.com/jonenn">
+                     <img src={github} width="33" alt="Github Profile"></img>
+                  </a>
+               </div>
             </section>
          </div>
       </div>
