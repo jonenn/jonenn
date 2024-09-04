@@ -11,7 +11,7 @@ const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
    return (
       <div className={cardWrapperClass}>
          <div className="card">
-            <img className="card__image" src={profile}></img>
+            <img className="card__image" src={profile} alt="Jonenn's Profile" />
             <div className="card__subcontainer">
                <h1 className="card__title">{ctitle}</h1>
                <p className="card__paragraph">{cparagraph}</p>
@@ -20,39 +20,42 @@ const IntroCard = ({ currentState, ctitle, cparagraph, csubtitle }) => {
                   <ul className="card__list--items">
                      <li>HTML5</li>
                      <li>CSS3</li>
-                     <li>JavaScript</li>
-                     <li>JSON</li>
-                     <li>Bash</li>
                      <li>CSS Flex</li>
                      <li>Grid Layout</li>
+                     <li>JavaScript</li>
+                     <li>JSON</li>
                   </ul>
+                  <ul className="card__list--items">
+                     <li>Bash</li>
+                     <li>Git/GitHub</li>
+                     <li>NPM</li>
+                     <li>Vite</li>
+                     <li>Agile/SCRUM</li>
+                  </ul>
+                  <ul className="card__list--items">
+                     <li>React</li>
+                     <li>React-Router</li>
+                     <li>React-Context</li>
+                     <li>Redux</li>
+                     <li>Axios</li>
+                  </ul>
+                  <ul className="card__list--items"></ul>
                   <ul className="card__list--items">
                      <li>Responsiveness</li>
-                     <li>Git/GitHub</li>
-                     <li>Vite</li>
-                     <li>React</li>
-                     <li>React Router</li>
-                     <li>React Context</li>
-                     <li>Redux</li>
-                  </ul>
-                  <ul className="card__list--items">
-                     <li>NPM</li>
-                     <li>Axios</li>
                      <li>Bootstrap</li>
-                     <li>Photoshop</li>
-                     <li>Illustrator</li>
                      <li>Figma</li>
-                     <li>Agile/SCRUM</li>
+                     <li>Illustrator</li>
+                     <li>Photoshop</li>
                   </ul>
                </section>
             </div>
             <section className="contact">
                <p>Contact me:</p>
                <a href="https://www.linkedin.com/in/juan-j-malaver-04013119b">
-                  <img src={linkedin} width="33"></img>
+                  <img src={linkedin} width="33" alt="Linkedin Profile"></img>
                </a>
                <a href="https://github.com/jonenn">
-                  <img src={github} width="33"></img>
+                  <img src={github} width="33" alt="Github Profile"></img>
                </a>
             </section>
          </div>

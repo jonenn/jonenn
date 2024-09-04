@@ -18,17 +18,26 @@ const Navbar = () => {
             <ul className="off-site">
                <li>
                   <a href="https://www.linkedin.com/in/juan-j-malaver-04013119b">
-                     <img src={linkedin} width="33"></img>
+                     <img
+                        src={linkedin}
+                        width="33"
+                        alt="Linkedin Profile"
+                     ></img>
                   </a>
                </li>
                <li>
                   <a href="https://github.com/jonenn">
-                     <img src={github} width="33"></img>
+                     <img src={github} width="33" alt="Github Profile"></img>
                   </a>
                </li>
             </ul>
             <Link className="logo--link" to="/">
-               <img className="logo--image" src={jonennLogo} height="78"></img>
+               <img
+                  className="logo--image"
+                  src={jonennLogo}
+                  height="78"
+                  alt="Website's logo"
+               ></img>
             </Link>
          </nav>
       </header>

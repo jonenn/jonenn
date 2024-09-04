@@ -15,7 +15,7 @@ const ProjectsGrid = ({ currentState }) => {
          <div class="title-container">
             <img
                src="https://jonenn.github.io/musique/images/Jonenn.gif"
-               alt=""
+               alt="Animated Jonenn's Logo "
                className="logo--gif"
             />
             <h1 className="portfolio__title">My Portfolio</h1>

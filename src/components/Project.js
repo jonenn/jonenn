@@ -10,7 +10,11 @@ const Project = (props) => {
             <h6 className="window__title--project">{props.title}</h6>
          </section>
          <a href={props.goto} target="_blank" rel="noreferrer">
-            <img className="window__image" src={props.image}></img>
+            <img
+               className="window__image"
+               src={props.image}
+               alt="A Project Showcase"
+            ></img>
          </a>
       </section>
    );
